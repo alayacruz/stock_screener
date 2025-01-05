@@ -101,9 +101,7 @@ class StockScreenerApp:
 
 
    data, name = fetch_stock_data(ticker, start_date, end_date)
-   """if data is None or data.empty: 
-    print("No data fetched for the given date range.") 
-    return"""
+   
 
    data=calc_metric(data,50)
    plot_data(ticker,data,feature,name)
